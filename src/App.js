@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import CreateTodos from './components/CreateTodos';
+import CreateTodos from './components/CreateTodos';
 // import TodosList from './containers/TodosList';
 import logo from './logo.svg';
 import './styles/App.css';
@@ -19,8 +19,8 @@ class App extends Component {
             The God will approve your todo, if it is worthy.
           </p>
         </header>
-        {/* <CreateTodos />
-        <TodosList /> */}
+        <CreateTodos />
+        {/* <TodosList /> */}
       </div>
     );
   }
