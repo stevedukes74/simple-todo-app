@@ -14,13 +14,16 @@ const Todos = ({
   handleToggle,
   handleDelete
 }) => (
-  <div>
-    {todos.map(todo => (
-      <div key={todo.id.toString()} className="todo-row">
-        <div className={`todos ${todo.completed ? 'done' : ''}`}>{todo.text}</div>
-        <div>{!todo.completed && <button onClick={() => handleToggle(todo.id)}>Done</button>}</div>
-        <div>{todo.completed && <button onClick={() => handleToggle(todo.id)}>Undo</button>}</div>
-        <button onClick={() => handleDelete(todo.id)}>Delete</button>
+  <div className="todos-container">
+    {todos.map((todo, i) => (
+      <div key={todo.id.toString()} className={`todo-row ${(i + 1) % 2 === 0 ? 'even' : ''}`}>
+        <div className={`todos ${todo.completed ? 'done' : ''}`}>{`${i + 1}. ${todo.text}`}</div>
+        <div className="todo-button">
+          <button onClick={() => handleToggle(todo.id)}>
+            {!todo.completed ? 'Done' : 'Undo'}
+          </button>
+        </div>
+        <button className="todo-button" onClick={() => handleDelete(todo.id)}>Delete</button>
       </div>
     ))}
   </div>
