@@ -1,4 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+State management is handled via Redux.
+
+This is a simple todo app that allows you to add tasks/todos to a todos list. You can also cross off items that you've completed or delete them altogether.
+
+If you have not installed git or node, please download and install them before trying to run this locally.
+
+To run this locally:
+1. git clone this repo
+2. `cd simple-todo-app`
+3. run `npm install` to add all dependencies
+4. run `npm start`
+5. To view it, go to [http://localhost:3000](http://localhost:3000) in your browser if it doesn't open automatically.
+
 
 ## Available Scripts
 
