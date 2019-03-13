@@ -22,6 +22,8 @@ class TodosList extends Component {
     const numTodos = this.props.todos.length;
     return (
       <Fragment>
+        <p className="help-text">Click 'Done' to cross out a todo item.</p>
+        <hr />
         <p>{`${numTodos} todo item${numTodos !== 1 ? 's' : ''}`}</p>
         <Todos todos={this.props.todos} handleDelete={this.handleDelete} handleToggle={this.handleToggle} />
       </Fragment>

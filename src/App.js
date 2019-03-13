@@ -15,8 +15,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Above is the Great Eye of the React God.<br />
-            The God will approve your todo, if it is worthy.
+            This is a simple todo app.
           </p>
         </header>
         <CreateTodos />

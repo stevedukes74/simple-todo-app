@@ -49,10 +49,9 @@ class CreateTodo extends Component {
     this.setState({ text: e.target.value });
   }
   render() {
-    console.log('props', this.props);
     return (
       <Fragment>
-        <div>Please enter a todo item in the input field below.</div>
+        <div class="instructions">Please enter a todo item in the input field below.</div>
         <form onSubmit={this.handleSubmitTodo}>
           <input type="text" id="text" value={this.state.text} onChange={this.handleChange} autoFocus />
           <button onClick={() => this.handleSubmitTodo}>Add Todo</button>
